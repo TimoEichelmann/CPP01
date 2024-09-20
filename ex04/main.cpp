@@ -1,35 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Weapon.cpp                                         :+:      :+:    :+:   */
+/*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: timo <timo@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/11 14:25:13 by timo              #+#    #+#             */
-/*   Updated: 2024/09/13 14:00:19 by timo             ###   ########.fr       */
+/*   Created: 2024/09/13 18:20:40 by timo              #+#    #+#             */
+/*   Updated: 2024/09/18 21:44:19 by timo             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Weapon.hpp"
 #include <iostream>
 
-Weapon::Weapon(std::string starttype) : type(starttype)
+int main(int argc, char *argv[])
 {
-	std::cout << "weapon created" << std::endl;
-}
+	if (argc != 4)
+		return (-1);
 
-std::string const &	Weapon::getType(void) const
-{
-	std::cout << this->type << std::endl;
-	return (this->type);
-}
-
-void		Weapon::setType(std::string new_type)
-{
-	this->type = new_type;
-}
-
-Weapon::~Weapon(void)
-{
-	std::cout << "weapon destroyed" << std::endl;
+	std::string s1 = argv[2];
+	std::string s2 = argv[3];
+	std::ifstream in.open(argv[1]);
+	if ()
 }
